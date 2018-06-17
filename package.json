@@ -1,6 +1,6 @@
 {
   "name": "creact-cli",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "Command line generate react files and components",
   "main": "creact.js",
   "scripts": {
@@ -11,6 +11,10 @@
   "dependencies": {
     "chalk": "^2.4.1",
     "commander": "^2.15.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Davidcreador/creact-cli"
   },
   "keywords": [
     "cli",
