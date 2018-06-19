@@ -29,8 +29,8 @@ Create component:
 
 Create component and folder
 
-    creact get -c my-component -f src/app/components/  // src/app/components/my-component.js
+    creact gen -c my-component -f src/app/components/  // src/app/components/my-component.js
 
 Create component - folder - extension
 
-    creact get -c my-component -f src/app/components/ -x .ts  // src/app/components/my-component.ts
+    creact gen -c my-component -f src/app/components/ -x .ts  // src/app/components/my-component.ts
