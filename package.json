@@ -1,6 +1,6 @@
 {
   "name": "creact-cli",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "Command line generate react files and components",
   "main": "creact.js",
   "scripts": {
