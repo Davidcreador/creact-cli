@@ -1,21 +1,36 @@
-# Reacli
+creact-cli
+=========
+### Development tools for React
 
-## Description
+## Installation
 
-Command line tool for React, to create components or any other file.
+    npm install -g creact-cli
 
-### Steps:
+## Usage
 
-- Create commands using commander, to create specific type of file.
-  - type(component - service - interface - etc..).
-  - name
-  - extension (.js - .ts).
-  - folder (directory where to output the files).
-- Get what the user's input is. (Commander arguments)
-- Create the directories (If there are any).
-  - Check in which directory I am in.
-  - Output the file(s) in the specific folder the user passed in.
-- Create the file ([name]+[extension]).
-  - Use the name the user passed in and the file extension.
-- Use templates to create the files requested by the user. (file - test file)
-  - Each template is the type of string with a placeholder inside to be changed with the [name] the user passed in.
+    Usage: creact gen [options]
+
+    Options:
+
+      -h, --help           output usage information
+      -V, --version        output the version number
+      -c, --component [name]  Create a component
+      -s, --service [name]  Create a service
+      -i, --interface [name]  Create a interface
+      -f, --folder [path/to/folder]  Create folder structure and store the file
+      -x, --extension [.ts/.js]  Add extension to the file
+
+## Examples
+
+Create component:
+
+    creact gen -c my-component // my-component.js
+
+
+Create component and folder
+
+    creact get -c my-component -f src/app/components/  // src/app/components/my-component.js
+
+Create component - folder - extension
+
+    creact get -c my-component -f src/app/components/ -x .ts  // src/app/components/my-component.ts
