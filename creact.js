@@ -10,7 +10,7 @@ program.version(require('./package').version).usage('<command> [options]');
 program
   .command('gen')
   .description('Create a new file type')
-  .option('-c, --component [name]')
+  .option('-c, --component <name>')
   .option('-x, --extension [extension]', 'File extension [.js]', '.js')
   .option('-s, --service [service]')
   .option('-i, --interface [interface]')
@@ -29,7 +29,11 @@ program.arguments('<command>').action(cmd => {
 // add some useful info on help
 program.on('--help', () => {
   console.log();
-  console.log(`  Run ${chalk.cyan(`creact <command> --help`)} for detailed usage of given command.`);
+  console.log(
+    `  Run ${chalk.cyan(
+      `creact <command> --help`
+    )} for detailed usage of given command.`
+  );
   console.log();
 });
 program.commands.forEach(c => c.on('--help', () => console.log()));

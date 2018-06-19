@@ -1,5 +1,4 @@
 const path = require('path');
-const writeFile = require('./writeFile');
 const mkDirAndFile = require('../lib/mkDirAndFile');
 
 module.exports = function mkDirByPath(targetDir, filename, templatePath) {

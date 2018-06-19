@@ -7,7 +7,10 @@ module.exports = function(dir, fileName, templatePath) {
     .then(path => readFile(path, templatePath))
     .then(responseObj => {
       // Replace our placeholders with real data (so far, just the component name)
-      responseObj.template = responseObj.template.replace(/\[FILENAME\]/g, fileName.split('.')[0]);
+      responseObj.template = responseObj.template.replace(
+        /\[FILENAME\]/g,
+        fileName.split('.')[0]
+      );
       return responseObj;
     })
     .then(res => {
